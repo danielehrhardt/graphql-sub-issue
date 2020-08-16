@@ -1,0 +1,15 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Device {
+  model: String
+}
+
+type Query {
+  devices(dashboard: Boolean): [Device!]!
+}
+
+type Subscription {
+  deviceUpdate(serialNumber: String!): Device!
+}
