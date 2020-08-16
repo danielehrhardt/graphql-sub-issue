@@ -25,4 +25,9 @@ export class DeviceResolver {
   async deviceUpdate(@Args('serialNumber') serialNumber: string) {
     return pubSub.asyncIterator('deviceUpdate');
   }
+
+  @Subscription(returns => Device)
+  commentAdded() {
+    return pubSub.asyncIterator('commentAdded');
+  }
 }

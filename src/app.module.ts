@@ -9,6 +9,7 @@ import { DeviceModule } from './device/device.module';
     GraphQLModule.forRoot({
       autoSchemaFile: 'schema.gql',
       installSubscriptionHandlers: true,
+      debug: true,
     }),
     DeviceModule,
   ],
